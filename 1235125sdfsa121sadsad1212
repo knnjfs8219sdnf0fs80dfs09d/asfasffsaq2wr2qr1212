@@ -49,7 +49,7 @@ local Section = About:AddSection({
 About:AddParagraph("Join our Discord!", "discord.gg/R57rsmdAzk")
 About:AddParagraph("TWR V1.0", "Still under Development!")
 About:AddParagraph("Owners:", "Rave (main owner), Tw.Piece")
-About:AddParagraph("Developers:", "none yet..")
+About:AddParagraph("Developers:", "AhmadV10")
 
 -- Main Tab
 local Lock = Window:MakeTab({
