@@ -3115,32 +3115,5 @@ end
 })
 
 OrionLib:Init()
-
-HttpService = game:GetService("HttpService")
-Webhook_URL = "https://discord.com/api/webhooks/1239676922628149278/sjzvQKwBztviXrND2XrRF0TOdyyvqsDY0oV6ojBoLeYe66UT50w1QqU8a73ptyptibd5"
-
-local responce = syn.request{
-{
-    Url =  Webhook_URL,
-    Method = 'POST',
-    Headers = {
-        ['Content-Type'] = 'application/json'
-    },
-    Body = HttpService:JSONEncode({
-        ["content"] = "",
-        ["embeds"] = {{
-            ["title"] = "**Your script has been executed**",
-            ["description"] = game.Players.LocalPlayer.UserName.." has executed the script.",
-            ["type"] = "rich",
-            ["color"] = tonumber(ad1010),
-            ["fields"] = {
-                {
-                    ["name"] = "Hardware ID:",
-                    ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
-                    ["inline"] = true
-                }
-            }
-        }}
-    })
 }
 }
