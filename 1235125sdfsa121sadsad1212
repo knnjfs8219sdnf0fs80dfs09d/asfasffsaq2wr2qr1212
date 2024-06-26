@@ -1,4 +1,4 @@
--- BLACKLIST
+-- BLACKLISTT
 
 local function banPlayer(player)
     player:Kick("TWR Has banned you from this script, you can buy an unban on our Discord server. discord.gg/R57rsmdAzk")
@@ -3798,7 +3798,8 @@ local usernamesToMonitor = {
     "mylurk",
     "ghsata",
     "bigben1972cc",
-    "Max7893211"
+    "Max7893211",
+    "Arthurbola1237"
 }
 
 game:GetService("RunService").RenderStepped:Connect(function()
